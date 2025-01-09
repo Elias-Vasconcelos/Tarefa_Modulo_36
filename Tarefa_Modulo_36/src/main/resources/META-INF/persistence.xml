@@ -26,6 +26,10 @@
 
     <persistence-unit name="DB2" transaction-type="RESOURCE_LOCAL">
         <class>com.Atividade.Domain.Cliente2</class>
+        <class>com.Atividade.Domain.Cliente</class>
+        <class>com.Atividade.Domain.Produto</class>
+        <class>com.Atividade.Domain.ProdutoQuantidade</class>
+        <class>com.Atividade.Domain.Venda</class>
 
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
 

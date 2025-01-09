@@ -67,10 +67,12 @@ public class Client2Test {
         Cliente clienteConsultado = clienteDao.consultar(cliente.getId());
         Assert.assertNotNull(clienteConsultado);
 
-        cliente.setId(null);
-        clienteDB2Dao.cadastrar(cliente);
+//        cliente.setId(null);
 
-        Cliente clienteConsultado2 = clienteDB2Dao.consultar(cliente.getId());
+        Cliente cliente2 = criarCliente();
+        clienteDB2Dao.cadastrar(cliente2);
+
+        Cliente clienteConsultado2 = clienteDB2Dao.consultar(cliente2.getId());
         Assert.assertNotNull(clienteConsultado2);
 
     }
@@ -155,7 +157,7 @@ public class Client2Test {
     private Cliente criarCliente() {
         Cliente cliente = new Cliente();
         cliente.setCpf(rd.nextLong());
-        cliente.setNome("Rodrigo");
+        cliente.setNome("elias");
         cliente.setCidade("São Paulo");
         cliente.setEnd("End");
         cliente.setEstado("SP");

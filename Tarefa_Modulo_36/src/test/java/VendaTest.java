@@ -303,7 +303,7 @@ public class VendaTest {
     private Cliente cadastrarCliente() throws TipoChaveNaoEncontradaException, DAOException {
         Cliente cliente = new Cliente();
         cliente.setCpf(rd.nextLong());
-        cliente.setNome("Rodrigo");
+        cliente.setNome("Elias");
         cliente.setCidade("São Paulo");
         cliente.setEnd("End");
         cliente.setEstado("SP");

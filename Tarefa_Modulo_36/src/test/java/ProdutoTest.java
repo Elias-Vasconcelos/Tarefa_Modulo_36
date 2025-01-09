@@ -61,11 +61,11 @@ public class ProdutoTest {
     @Test
     public void alterarCliente() throws TipoChaveNaoEncontradaException, DAOException, MaisDeUmRegistroException, TableException {
         Produto produto = criarProduto("A4");
-        produto.setNome("Rodrigo Pires");
+        produto.setNome("Elias");
         produtoDao.alterar(produto);
         Produto produtoBD = this.produtoDao.consultar(produto.getId());
         assertNotNull(produtoBD);
-        Assert.assertEquals("Rodrigo Pires", produtoBD.getNome());
+        Assert.assertEquals("Elias", produtoBD.getNome());
     }
 
     @Test

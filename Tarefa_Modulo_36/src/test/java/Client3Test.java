@@ -170,7 +170,7 @@ public class Client3Test {
     private Cliente criarCliente() {
         Cliente cliente = new Cliente();
         cliente.setCpf(rd.nextLong());
-        cliente.setNome("Rodrigo");
+        cliente.setNome("elias");
         cliente.setCidade("São Paulo");
         cliente.setEnd("End");
         cliente.setEstado("SP");
@@ -182,7 +182,7 @@ public class Client3Test {
     private Cliente2 criarCliente2() {
         Cliente2 cliente = new Cliente2();
         cliente.setCpf(rd.nextLong());
-        cliente.setNome("Rodrigo");
+        cliente.setNome("elias");
         cliente.setCidade("São Paulo");
         cliente.setEnd("End");
         cliente.setEstado("SP");

@@ -84,12 +84,12 @@ public class ClientTest {
         Cliente clienteConsultado = clienteDao.consultar(cliente.getId());
         Assert.assertNotNull(clienteConsultado);
 
-        clienteConsultado.setNome("Rodrigo Pires");
+        clienteConsultado.setNome("Elias");
         clienteDao.alterar(clienteConsultado);
 
         Cliente clienteAlterado = clienteDao.consultar(clienteConsultado.getId());
         Assert.assertNotNull(clienteAlterado);
-        Assert.assertEquals("Rodrigo Pires", clienteAlterado.getNome());
+        Assert.assertEquals("Elias", clienteAlterado.getNome());
 
         clienteDao.excluir(cliente);
         clienteConsultado = clienteDao.consultar(clienteAlterado.getId());
@@ -127,7 +127,7 @@ public class ClientTest {
     private Cliente criarCliente() {
         Cliente cliente = new Cliente();
         cliente.setCpf(rd.nextLong());
-        cliente.setNome("Rodrigo");
+        cliente.setNome("Elias");
         cliente.setCidade("São Paulo");
         cliente.setEnd("End");
         cliente.setEstado("SP");

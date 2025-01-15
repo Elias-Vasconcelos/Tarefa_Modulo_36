@@ -44,8 +44,8 @@ public class Client3Test {
         Collection<Cliente> list2 = clienteDB2Dao.buscarTodos();
         excluir(list2, clienteDB2Dao);
 
-        Collection<Cliente2> list3 = clienteDB3Dao.buscarTodos();
-        excluir3(list3);
+//        Collection<Cliente2> list3 = clienteDB3Dao.buscarTodos();
+//        excluir3(list3);
     }
 
     private void excluir(Collection<Cliente> list, IClienteDAO<Cliente> clienteDao) {

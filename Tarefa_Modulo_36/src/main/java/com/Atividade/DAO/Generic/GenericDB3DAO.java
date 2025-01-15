@@ -8,7 +8,7 @@ public abstract class GenericDB3DAO <T extends persistence, E extends Serializab
         extends GenericDAO<T,E> {
 
     public GenericDB3DAO(Class<T> persistenteClass) {
-        super(persistenteClass, "Mysql1");
+        super(persistenteClass, "DB3");
     }
 
 }

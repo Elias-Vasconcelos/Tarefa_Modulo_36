@@ -44,11 +44,15 @@
         </properties>
     </persistence-unit>
 
-    <persistence-unit name="Mysql1">
+    <persistence-unit name="DB3" transaction-type="RESOURCE_LOCAL">
 
         <provider>org.hibernate.ejb.HibernatePersistence</provider>
 
         <class>com.Atividade.Domain.Cliente2</class>
+        <class>com.Atividade.Domain.Cliente</class>
+        <class>com.Atividade.Domain.Produto</class>
+        <class>com.Atividade.Domain.ProdutoQuantidade</class>
+        <class>com.Atividade.Domain.Venda</class>
 
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
 
@@ -63,9 +67,42 @@
 
             <property name="hibernate.show_sql" value="true" />
             <property name="hibernate.format_sql" value="true" />
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="true" />
+            <property name="hibernate.use_sql_comments" value="true" />
+            <property name="hibernate.generate_statistics" value="true" />
         </properties>
 
     </persistence-unit>
+
+<!--    <persistence-unit name="Mysql1" transaction-type="RESOURCE_LOCAL">-->
+
+<!--        <class>com.Atividade.Domain.Cliente2</class>-->
+<!--        <class>com.Atividade.Domain.Cliente</class>-->
+<!--        <class>com.Atividade.Domain.Produto</class>-->
+<!--        <class>com.Atividade.Domain.ProdutoQuantidade</class>-->
+<!--        <class>com.Atividade.Domain.Venda</class>-->
+
+<!--        <properties>-->
+<!--            &lt;!&ndash; URL de conexão ao banco &ndash;&gt;-->
+<!--            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/vendas_onlines" />-->
+
+<!--            &lt;!&ndash; Driver do banco &ndash;&gt;-->
+<!--            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />-->
+
+<!--            &lt;!&ndash; Usuário do banco &ndash;&gt;-->
+<!--            <property name="javax.persistence.jdbc.user" value="admin" />-->
+
+<!--            &lt;!&ndash; Senha do banco &ndash;&gt;-->
+<!--            <property name="javax.persistence.jdbc.password" value="admin" />-->
+
+<!--            &lt;!&ndash; Configurações adicionais &ndash;&gt;-->
+<!--            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect" />-->
+<!--            <property name="hibernate.hbm2ddl.auto" value="update" />-->
+<!--            <property name="hibernate.show_sql" value="true" />-->
+<!--            <property name="hibernate.format_sql" value="true" />-->
+<!--        </properties>-->
+<!--    </persistence-unit>-->
 
 
 </persistence>
